@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jishan Creative Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f1117;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:800;
+color:#ffb400;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+padding:0 8%;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1496171367470-9ed9a91ea931');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero h1{
+font-size:60px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#ffb400;
+}
+
+.hero p{
+font-size:18px;
+opacity:.9;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#ffb400;
+color:black;
+text-decoration:none;
+font-weight:700;
+border-radius:50px;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1b1f2a;
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#ffb400;
+}
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.portfolio img{
+width:100%;
+border-radius:15px;
+}
+
+.contact{
+text-align:center;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
+font-weight:700;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#08090d;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">JISHAN STUDIO</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+We Create
+<span>High-Converting Ads</span>
+For Modern Businesses
+</h1>
+
+<p>
+Real Estate Ads • Graphic Design • AI Video Ads • Social Media Marketing
+</p>
+
+<a href="#contact" class="btn">
+Get Started
+</a>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Graphic Design</h3>
+<p>Premium social media creatives and ad designs.</p>
+</div>
+
+<div class="card">
+<h3>AI Video Ads</h3>
+<p>High-converting promotional videos for businesses.</p>
+</div>
+
+<div class="card">
+<h3>Real Estate Marketing</h3>
+<p>Luxury property advertisement creatives.</p>
+</div>
+
+<div class="card">
+<h3>Branding</h3>
+<p>Professional brand identity and campaign design.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2 class="title">Portfolio</h2>
+
+<div class="portfolio">
+
+<img src="https://picsum.photos/500/400?1">
+<img src="https://picsum.photos/500/400?2">
+<img src="https://picsum.photos/500/400?3">
+<img src="https://picsum.photos/500/400?4">
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="title">Let's Work Together</h2>
+
+<p>
+Need premium graphic design or AI video ads?
+</p>
+
+<a
+class="whatsapp"
+href="https://wa.me/919999999999"
+target="_blank">
+
+Chat On WhatsApp
+
+</a>
+
+</section>
+
+<footer>
+
+© 2026 Jishan Creative Studio
+
+</footer>
+
+</body>
+</html>
